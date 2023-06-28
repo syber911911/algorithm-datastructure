@@ -33,13 +33,13 @@ public class DepthFirstSearch {
         toVisit.push(next);
         // Stack isEmpty ==> 모든 노드의 방문이 이루어졌다.
         while (!toVisit.isEmpty()) {
-            // TODO 다음 방문할 곳을 가져온다.
+            // 다음 방문할 곳을 가져온다.
             next = toVisit.pop();
-            // TODO 이미 방문했다면 다음 곳으로 간다.
+            // 이미 방문했다면 다음 곳으로 간다.
             if (visited[next]) continue;
-            // TODO 방문했다고 표시.
+            // 방문했다고 표시.
             visited[next] = true;
-            // TODO 다음 방문 대상을 검색해서, Stack push
+            // 다음 방문 대상을 검색해서, Stack push
             for (int node : edgeMap[next]) {
 
             }
